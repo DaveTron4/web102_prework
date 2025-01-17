@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
-    color: #2D3142; /* Primary text color */
-    background-color: #F5F5F5; /* Neutral light background */
+    line-height: 1.6; /* Adjust for readability */
+    color: #322940; /* Primary text color */
+    background-color: #758190;
 }
 
 #tentacles {
     width: 50px;
 }
 
-/* Header section */
+/*Header section start*/
 .header {
     position: sticky;
     display: flex;
     justify-content: space-evenly;
-    background-color: #4F5D75; /* Secondary color */
+    background-color: lightblue;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -34,156 +35,163 @@ body {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s;
+    
 }
 
 .header a:hover {
-    background-color: #EF8354; /* Accent color */
-    transform: scale(1.1);
+    background-color: #BFA27E;
 }
+/*Header section end*/
 
-/* Hero section */
+
+
+/*Hero section start*/
 .hero {
     text-align: center;
-    background: linear-gradient(135deg, #2D3142, #4F5D75); /* Simplistic gradient */
+    background: linear-gradient(135deg, #322940, #987EBF);
     color: #FFFFFF;
     padding: 100px 20px;
     margin-bottom: 20px;
 }
 
-/* Headings */
+/*Hero section end*/
+
+
+
+/* Headings start */
 h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #EF8354; /* Accent color */
+    color: #987EBF; /* Accent color */
 }
 
 h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #4F5D75; /* Secondary color */
+    color: #BFA27E; /* Secondary color */
 }
 
 h3 {
     font-size: 28px;
     font-weight: 600;
-    color: #2D3142; /* Primary color */
 }
 
 p {
     font-size: 16px;
     font-weight: 400;
-    color: #2D3142; /* Primary text color */
+    color: #322940; /* Body text */
 }
 
 button {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    background-color: #EF8354; /* Accent color */
+    background-color: #987EBF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 1%;
     margin: 1%;
-    transition: background-color 0.3s, transform 0.2s;
 }
+/* Headings end */
 
-button:hover {
-    background-color: #4F5D75; /* Secondary color */
-    transform: scale(1.1);
-}
 
-/* Subtitle section */
-.subtitle-container {
+
+/*Subtitle section start*/
+.subtitle-container{
     text-align: center;
     margin-top: 100px;
 }
+/*Subtitle section end*/
 
-/* Stats card section */
+
+
+/* Stats card section start */
 .stats-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    
+    
+}
+
+.stats-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+    transform: scale(1.2);
 }
 
 .stats-card {
-    background-color: #FFFFFF; /* Neutral background */
+    background-color: #a8b0bc;
     border-radius: 7px;
-    padding: 20px;
+    transition: transform .2s; /* Animation */
+    padding: 1%;
     margin: 1%;
-    width: 300px;
+    width: 100%;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.3s;
 }
+/* Stats card section end */
 
-.stats-card:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
-    color: #EF8354; /* Accent color */
 }
 
-/* Game container section */
+
+/* Game container section start */
 #games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #FFFFFF;
 }
 
 .game-card {
-    background-color: #FFFFFF; /* Neutral background */
-    padding: 20px;
+    background-color: #FFFFFF;
+    padding: 1%;
     margin: 1%;
     width: 300px;
     text-align: center;
     border-radius: 7px;
-    transition: transform 0.2s, box-shadow 0.3s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform .2s; /* Animation */
 }
 
 .game-card:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px lightblue;
+    transform: scale(1.2);
+    
 }
+/* Game container section end */
 
-/* Button container */
+
+
 #button-container {
     text-align: center;
 }
 
-/* Filter buttons */
-.filter-button {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4F5D75; /* Secondary color */
-    color: white;
-    transition: background-color 0.3s, transform 0.2s;
+
+
+/* Filter buttons section start */
+.filter-button{
+    transition: background-color .5s ease-out;
+    transition: transform .2s; /* Animation */
+    
 }
 
-.filter-button:hover {
-    background-color: #EF8354; /* Accent color */
-    transform: scale(1.05);
+.filter-button:hover{
+    background-color: #FF1493;
 }
 
-.filter-button:active {
-    transform: scale(1.1);
+.filter-button:active{
+    transform: scale(1.2);
 }
+/* Filter buttons section end */
+
