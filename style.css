@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     line-height: 1.6; /* Adjust for readability */
     color: #322940; /* Primary text color */
-    background-color: #758190;
+    background-color: #2b6777;
 }
 
 
@@ -19,7 +19,7 @@ body {
     z-index: 1000; 
     display: flex;
     justify-content: space-evenly;
-    background-color: lightblue;
+    background-color: #2b6777;
     padding: 5px 15px; /* Reduce padding for a slimmer navbar */
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ body {
 .header button {
     display: flex;
     align-items: center; /* Aligns content vertically within the button */
-    color: #FFFFFF;
+    color: #2b6777;
     text-decoration: none;
     margin: 10px 10px; /* Slightly smaller margins between buttons */
     font-size: 14px; /* Smaller font for a compact look */
@@ -45,7 +45,8 @@ body {
 }
 
 .header button:hover {
-    background-color: #BFA27E; /* Add hover effect for buttons */
+    background-color: #6fcdb8; 
+    color: white;/* Add hover effect for buttons */
 }
 
 .header-text {
@@ -67,6 +68,8 @@ body {
     #tentacles {
         max-width: 50px; /* Adjust the logo size for smaller screens */
     }
+
+    
 }
 
 /*Header section end*/
@@ -76,11 +79,21 @@ body {
 /*Hero section start*/
 .hero {
     text-align: center;
-    background: linear-gradient(135deg, #322940, #987EBF);
+    background-image: linear-gradient(to bottom, #6fcdb8, #55b3ac, #42999d, #34808b, #2b6777);
     color: #FFFFFF;
     padding-top: 150px;
     padding-bottom: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+.hero button {
+    transition: background-color 0.3s;
+    color: #2b6777;
+}
+
+.hero button:hover{
+    background-color: #6fcdb8; 
+    color: white;/* Add hover effect for buttons */
 }
 
 /*Hero section end*/
@@ -91,13 +104,15 @@ body {
 h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #987EBF; /* Accent color */
+    color: white; /* Accent color */
+    border: #322940;
+    border-radius: 50px;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #BFA27E; /* Secondary color */
+    color: #f2f2f2; /* Secondary color */
 }
 
 h3 {
@@ -108,14 +123,14 @@ h3 {
 p {
     font-size: 16px;
     font-weight: 400;
-    color: #322940; /* Body text */
+    color: #f2f2f2; /* Body text */
 }
 
 button {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    background-color: #987EBF;
+    background-color: #c8d8e4;
     color: white;
     border: none;
     border-radius: 5px;
@@ -140,8 +155,15 @@ button {
 .stats-container {
     display: flex;
     align-items: center;
-    
-    
+}
+
+.division-line {
+    height: 10px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+    width: 60%; /* Length of the line */
+    margin: 20px auto;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to left, #2b6777, #317986, #3a8c94, #46a0a1, #55b3ac, #55b3ac, #55b3ac, #55b3ac, #46a0a1, #3a8c94, #317986, #2b6777);
 }
 
 .stats-card:hover{
@@ -151,7 +173,7 @@ button {
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #f2f2f2;
     border-radius: 7px;
     transition: transform .2s; /* Animation */
     padding: 1%;
@@ -159,6 +181,15 @@ button {
     width: 100%;
     text-align: center;
 }
+
+.stats-card h3{
+    color: #2b6777;
+}
+
+.stats-card p{
+    color: #2b6777;
+}
+
 /* Stats card section end */
 
 
@@ -182,7 +213,7 @@ button {
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background-color: #f2f2f2 ;
     padding: 1%;
     margin: 1%;
     width: 300px;
@@ -197,6 +228,10 @@ button {
     transform: scale(1.2);
     
 }
+
+.game-card p {
+    color: #2b6777;
+}
 /* Game container section end */
 
 
@@ -209,13 +244,15 @@ button {
 
 /* Filter buttons section start */
 .filter-button{
-    transition: background-color .5s ease-out;
+    color: #2b6777; 
+    transition: background-color .3s;
     transition: transform .2s; /* Animation */
     
 }
 
 .filter-button:hover{
-    background-color: #FF1493;
+    background-color: #6fcdb8;
+    color: white;
 }
 
 .filter-button:active{
