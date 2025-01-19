@@ -11,8 +11,12 @@
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
-        <a href="#stats-title">Stats</a>
-        <a href="#our-games-title">Our Games</a>       
+        <button onclick="document.getElementById('stats-title').scrollIntoView({ behavior: 'smooth' });">
+            Stats
+        </button>
+        <button onclick="document.getElementById('our-games-title').scrollIntoView({ behavior: 'smooth' });">
+            Our Games
+        </button>
     </div>
 
     <!-- background info about company -->
@@ -21,7 +25,7 @@
         <div id="description-container">
             <p class="subtitle">The purpose of our company is to fund independent games. We've been in operation for 12 years.</p>
         </div>
-        <button onclick="document.getElementById('games-container').scrollIntoView({ behavior: 'smooth' });">
+        <button onclick="document.getElementById('our-games-title').scrollIntoView({ behavior: 'smooth' });">
             Explore Games
         </button>
     </div>

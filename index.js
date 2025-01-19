@@ -182,3 +182,30 @@ const secondGameName = document.createElement('p');
 // secondGame.classList.add('top-funded')
 secondGameName.innerHTML = secondGame.name;
 secondGameContainer.appendChild(secondGameName);
+
+/********************************************************************************************
+ * Nav Bar scroll animation
+ */
+let lastScrollPosition = 0;
+const navbar = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (currentScrollPosition > lastScrollPosition) {
+        // Scroll down to hide the navbar
+        navbar.classList.add('hidden');
+    } else {
+        // Scroll up to show the navbar
+        navbar.classList.remove('hidden');
+    }
+
+    // Update the last scroll position
+    lastScrollPosition = currentScrollPosition;
+});
+
+// Function to toggle the dropdown visibility on mobile
+function toggleDropdown() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('open');
+}
