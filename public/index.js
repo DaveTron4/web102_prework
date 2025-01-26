@@ -203,9 +203,3 @@ window.addEventListener('scroll', () => {
     // Update the last scroll position
     lastScrollPosition = currentScrollPosition;
 });
-
-// Function to toggle the dropdown visibility on mobile
-function toggleDropdown() {
-    var dropdown = document.querySelector('.dropdown');
-    dropdown.classList.toggle('open');
-}

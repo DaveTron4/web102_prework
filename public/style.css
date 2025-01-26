@@ -33,8 +33,6 @@ body {
 }
 
 .header button {
-    display: flex;
-    align-items: center; /* Aligns content vertically within the button */
     color: #2b6777;
     text-decoration: none;
     margin: 10px 10px; /* Slightly smaller margins between buttons */
@@ -50,11 +48,14 @@ body {
 }
 
 .header-text {
+    flex-grow: .5;
     font-size: 30px;
     margin: 15px;
+    cursor: pointer;
 }
 
 #tentacles {
+    flex-grow: 0;
     width: 50px;
 }
 
@@ -68,8 +69,6 @@ body {
     #tentacles {
         max-width: 50px; /* Adjust the logo size for smaller screens */
     }
-
-    
 }
 
 /*Header section end*/
@@ -78,22 +77,33 @@ body {
 
 /*Hero section start*/
 .hero {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to bottom, #6fcdb8, #55b3ac, #42999d, #34808b, #2b6777);
     color: #FFFFFF;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    height: 100vh;
+    text-align: center;
 }
 
 .hero button {
     transition: background-color 0.3s;
     color: #2b6777;
+    padding: 15px 30px;
 }
 
 .hero button:hover{
     background-color: #6fcdb8; 
     color: white;/* Add hover effect for buttons */
+}
+
+#description-container p {
+    font-size: clamp(1rem, 1.5vw, 3rem);
+}
+
+.hero h1 {
+    font-size: 50px;
 }
 
 /*Hero section end*/
@@ -157,12 +167,16 @@ button {
     align-items: center;
 }
 
+#stats-container {
+    margin-top: 2%;
+}
+
 .division-line {
     height: 10px; /* Thickness of the line */
     background-color: black; /* Color of the line */
     width: 60%; /* Length of the line */
     margin: 20px auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-image: linear-gradient(to left, #2b6777, #317986, #3a8c94, #46a0a1, #55b3ac, #55b3ac, #55b3ac, #55b3ac, #46a0a1, #3a8c94, #317986, #2b6777);
 }
 
@@ -190,6 +204,13 @@ button {
     color: #2b6777;
 }
 
+#first-game p {
+    font-size: 20px;
+}
+
+#second-game p {
+    font-size: 20px;
+}
 /* Stats card section end */
 
 
@@ -260,3 +281,51 @@ button {
 }
 /* Filter buttons section end */
 
+
+
+
+/* Other Games section start */
+.search-container{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+
+#game-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#game-name{
+    margin: 30px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#game-name:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#game-name:focus {
+    outline: 2px solid #007bff;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+
+/* Other Games section end */
+
+
+/* footer section start */
+.footer {
+    padding: 100px;
+}
+
+/* footer section end */
