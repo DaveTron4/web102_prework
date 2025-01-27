@@ -14,7 +14,7 @@ async function searchGame() {
     const data = await response.json();
 
     if (!gameName) {
-        gameCardDiv.innerHTML = '<p>Please enter a game name.</p>';
+        gameCardDiv.innerHTML = '<p class="error-message">Please enter a game name.</p>';
         return;
     }
 
@@ -39,16 +39,16 @@ async function searchGame() {
             div.innerHTML = `
                 <img src="${imageUrl}" alt="${gameName}" class="game-img">
                 <h3>${game.name}</h3>
+                <div class="rating-container">
+                    <div class="star"></div>
+                    <p class="rating">${rating}</p>
+                </div>
                 <p><strong>Released:</strong> ${releaseDate}</p>
             `;
     
             gameCardDiv.appendChild(div)
         }
-
-
-
     } else {
-        // Add <p> for the this to edit the style of it, also to other similar things
-        gameCardDiv.innerHTML = '<p>No game found with that name.</p>';
+        gameCardDiv.innerHTML = '<p class="error-message">No game found with that name.</p>';
     }
 }

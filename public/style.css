@@ -288,7 +288,6 @@ button {
 .search-container{
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
 }
 
 #game-info{
@@ -305,20 +304,32 @@ button {
     border-radius: 20px;
     padding: 0 15px;
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #c8d8e4;
     transition: all 0.3s ease;
     outline: none;
 }
 
+
 #game-name:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #c8d8e480;
 }
 
 #game-name:focus {
-    outline: 2px solid #007bff;
+    outline: 2px solid #6fcdb8;
     background-color: rgba(0, 0, 0, 0.02);
 }
 
+.star::before{
+    content: '\2605';
+    color: #6fcdb8;
+    font-size: 24px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
 
 /* Other Games section end */
 
