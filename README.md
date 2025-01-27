@@ -31,7 +31,11 @@ GIF created with ScreenToGif
 
 ## Notes
 
-While building this app I encountered a few challenges, mainly trying to manage my time to get it done. One of the main challenges that I faced was learning how to use JavaScript DOM since it wasn't something I was familiar with. However, by the end of this project I feel confortable using JS DOM. Another challenge which relates to JS DOM was that to use the API I had to learn how to hide the API in an .env using dotenv. I also had to learn how to use Node.js to get the data from the API, which took me a while to understand and I now know that JS DOM and Node.js don't work in the same script. I learned a lot from this project and had a lot of fun figuring out how to use these new skills.
+While building this app, I encountered several challenges, mainly managing my time to complete the project. One of the biggest challenges was learning how to use JavaScript DOM manipulation, as it was something I wasn’t familiar with. However, by the end of this project, I feel comfortable using the JS DOM.
+
+Another challenge related to the DOM was learning how to work with APIs securely. I had to figure out how to hide the API key in a `.env` file using the `dotenv` package. Additionally, I had to learn how to use Node.js to fetch data from the API. This took some time to understand, especially since I discovered that the JS DOM and Node.js can't be used in the same script.
+
+Overall, I learned a lot from this project and had fun figuring out how to apply these new skills.
 
 ## License
 
